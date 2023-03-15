@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+        <!-- plugins for this page  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/styleEn.css"> -->
+    <title>لوحة التاجر</title>
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader_wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- side bar -->
+    <section class="sidebar">
+        <a class="defult-link" href="index.html">
+            <div class="logohead">
+                <img src="images/logo_store.webp">
+            </div>
+        </a>
+
+        <div class="sidenav mt-5">
+            <ul>
+                <li>
+                    <a class="sidenav_link" href="index.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/index_icon.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">الرئيسيه</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="live.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/live.webp" class="width17" alt="side icon"></span>
+                            <p class="mb-0">البث المباشر</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="act">
+                    <a class="sidenav_link" href="auctions.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/auction1.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">المزادات</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="offers_ads.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/car_road.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">الإعلانات و العروض</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="orders.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/auction1.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">طلبات الشراء</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="servise.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/servise.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">خدمات المعرض</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="reports.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/noun_list.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">التقارير</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="delegates.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/users.webp" class="width17" alt="side icon"></span>
+                            <p class="mb-0">المساعدين</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="complaints.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/car_road.webp" class="width17"
+                                    alt="side icon"></span>
+                            <p class="mb-0">النزاعات و الشكاوي</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="profile.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/user.webp" class="width17" alt="side icon"></span>
+                            <p class="mb-0">الملف الشخصي</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="financial.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/money.webp" class="width17" alt="side icon"></span>
+                            <p class="mb-0">السجلات المالية</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav_link" href="login.html">
+                        <div class="d-flex align-items-center gap8">
+                            <span class="icon_btn"><img src="images/logout.webp" class="width17" alt="side icon"></span>
+                            <p class="mb-0">تسجيل الخروج</p>
+                        </div>
+                        <span class="pt-1">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- end side bar -->
+
+    <!-- dashboard body -->
+    <section class="pagebody">
+        <!-- header -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between">
+                    <button class="toggle_side btn icon_btn up raise">
+                        <img src="images/side_List.webp" class="width17" alt="list icon">
+                    </button>
+                    <form>
+                        <label class="position-relative">
+                            <input type="text" class="input_search" placeholder="كلمات مفتاحية">
+                            <span class="float_icon pt-1 font15 mainColor2">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                        </label>
+                    </form>
+                    <div class="d-flex align-items-center gap15">
+                        <a class="btn icon_btn up raise" href="notification.html">
+                            <img src="images/bell.webp" class="width17" alt="bell icon">
+                            <span class="pache">2</span>
+                        </a>
+                        <a href="profile.html" class="default_link d-flex align-items-center user_profile gap5">
+                            <img src="images/store_logo.webp" class="width35 bordered p-1 height35 radius6" alt="">
+                            <div class="d-flex flex-column">
+                                <span class="font11 fontBold">معرض صالح</span>
+                                <span class="font10 text-secondary">المدير العام</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- content -->
+        <div class="page_content">
+            <div class="container-fluid">
+                <div class="body_title">
+                    <h6>عرض المزاد</h6>
+                    <P>يمكنك إضافة بث مباشر جديد وإمكانيه تعديله أو حذفه</P>
+                </div>
+                <div class="main_card">
+                    <div class="row justify-content-between">
+                        <div class="col-6">
+                            <div class="bgf3 p-2">
+                                <h1 class="mb-0 fontBold font12">جي ام سي يوكن دينالي 2015</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-4">
+                            <div class="opacity1 mainColor2 p-2 text-center fontBold font12">
+                                <span>رقم الاعلان</span>
+                                <span>21455212</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-5 col-12">
+                            <div class="bordered">
+                                <div class="bordered pl-2 pr-2 bgf3 d-flex align-items-center justify-content-between">
+                                    <span class="fontBold font12 mainColor2">معلومات المزاد</span>
+                                    <div class="d-flex align-items-center gap10">
+                                        <button id="saveItem" class="btn fontBold font11 gap5 default_link p-0 d-flex align-items-center"><span class="pt-1 font14">
+                                                <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                                            </span>
+                                            <span>حفظ</span>
+                                        </button>
+                                        <a class="default_link fontBold font11 gap5 d-flex align-items-center" href="">
+                                            <span class="pt-1 font14">
+                                                <ion-icon name="share-social-outline" role="img" class="md hydrated" aria-label="share social outline"></ion-icon>
+                                            </span>
+                                            <span>مشاركة</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row p-2">
+                                    <div class="col-lg-4 col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-12 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between gap10 flex-wrap">
+                                                    <span class="font11"><img class="width13 H-auto" src="images/auction.webp" alt="aucation"> جدول</span>
+                                                    <span class="font11">المزاد الثالث</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between gap10 flex-wrap">
+                                                    <span class="font11"><img class="width13 H-auto" src="images/calendar.webp" alt="aucation"> تاريخ المزاد</span>
+                                                    <span class="font11">14/12/2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between gap10 flex-wrap">
+                                                    <span class="font11"><img class="width13 H-auto" src="images/clock.webp" alt="aucation"> وقت المزاد</span>
+                                                    <span class="font11">06:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-12 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between flex-wrap gap10">
+                                                    <span class="font11 fontBold d-flex align-items-center">
+                                                        <span class="M_end_5">التقييم</span>
+                                                        <i class="fas fa-exclamation-circle text-danger"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2">
+                                                <div class="indicator_bar">
+                                                    <span class="indicator_item">F</span>
+                                                    <span class="indicator_item">D</span>
+                                                    <span class="indicator_item">C</span>
+                                                    <span class="indicator_item">B</span>
+                                                    <span class="indicator_item">A</span>
+                                                </div>
+                                                <div dir="ltr" class="progress">
+                                                    <div class="progress-bar d-flex align-items-end pb-2" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                        <img src="images/caret-up.webp" class="width10 H-auto" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap5 bgf3 p-2 mb-2">
+                                    <span class="mainColor2 fontBold font12">الوقت المتبقي</span>
+                                    <span class="font12 fontBold mainGry2">5 أيام 3 ساعات 43 دقيقة</span>
+                                </div>
+                                <div class="row ml-0 mr-0 mb-4">
+                                    <div class="col-lg-4 col-md-6 col-12 bordered">
+                                        <div class="d-flex flex-column align-items-center justify-content-center height55">
+                                            <span class="font13 text-secondary fontBold mb-1">سعر بداية المزايدة</span>
+                                            <p class="font10 text-secondary mb-0 fontBold"><span class="font13 mainColor">15.000</span> ر.س </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 bordered">
+                                        <div class="d-flex flex-column align-items-center justify-content-center height55">
+                                            <span class="font13 text-secondary fontBold mb-1">السعر الحالي للمزيدة</span>
+                                            <p class="font10 text-secondary mb-0 fontBold"><span class="font13 mainColor">15.000</span> ر.س </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 bordered">
+                                        <div class="d-flex flex-column align-items-center justify-content-center height55">
+                                            <span class="font13 text-secondary fontBold mb-1">عدد المزايدات</span>
+                                            <p class="font13 mainColor2 fontBold mb-0">15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white m-2 p-2">
+                                    <h6 class="font12 fontBold mb-3 mainColor2">أخر المزايدات</h6>
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-hover mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="txt_start">
+                                                        <div class="d-flex align-items-center">
+                                                            <span><img class="width15 M_end_5" src="../images/user_circle.webp"
+                                                                    alt=""></span>
+                                                            <span class="font10">احمد مكاوي</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center font10">منذ 19 دقيقه</td>
+                                                    <td class="txt_end font10 fontBold">1000 ر.س</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt_start">
+                                                        <div class="d-flex align-items-center">
+                                                            <span><img class="width15 M_end_5" src="../images/user_circle.webp"
+                                                                    alt=""></span>
+                                                            <span class="font10">احمد مكاوي</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center font10">منذ 19 دقيقه</td>
+                                                    <td class="txt_end font10 fontBold">1000 ر.س</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt_start">
+                                                        <div class="d-flex align-items-center">
+                                                            <span><img class="width15 M_end_5" src="../images/user_circle.webp"
+                                                                    alt=""></span>
+                                                            <span class="font10">احمد مكاوي</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center font10">منذ 19 دقيقه</td>
+                                                    <td class="txt_end font10 fontBold">1000 ر.س</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <div class="bgf3 p-3 mb-4">
+                                <div id="sync1" class="owl-carousel owl-theme owl-product mb-2">
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                        <a class="default_link" data-fancybox="gallery" href="images/01.webp">
+                                            <img src="images/full_size.webp" class="width30 H-auto" alt="full size">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="sync2" class="owl-carousel owl-theme navigation-img-wrapper">
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/01.webp" alt="car">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- car discrip -->
+                    <div class="row mt-4 mb-4">
+                        <div class="col-12">
+                            <h5 class="mainColor2 fontBold mb-3">مواصفات السيارة</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/brand.webp" class="width16" alt="brand icon"></span>
+                                    <span>الماركة : </span></span>
+                                <span class="fontBold">كيا</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/type.webp" class="width16" alt="brand icon"></span>
+                                    <span>النوع : </span></span>
+                                <span class="fontBold">سونيت</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/sort.webp" class="width16" alt="brand icon"></span>
+                                    <span>الفئه : </span></span>
+                                <span class="fontBold">EX</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/calender.webp" class="width16" alt="brand icon"></span> <span>السنه : </span></span>
+                                <span class="fontBold">2021</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/export.webp" class="width16" alt="brand icon"></span> <span>الوارد : </span></span>
+                                <span class="fontBold">السعودية</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/color.webp" class="width16" alt="brand icon"></span>
+                                    <span>اللون : </span></span>
+                                <span class="fontBold">احمر</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/type.webp" class="width16" alt="brand icon"></span>
+                                    <span>المواصفات : </span></span>
+                                <span class="fontBold">نص فل </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/fuel_type.webp" class="width16" alt="brand icon"></span> <span>نوع الوقود : </span></span>
+                                <span class="fontBold">بنزين</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/car_hand.webp" class="width16" alt="brand icon"></span> <span>نوع القير : </span></span>
+                                <span class="fontBold">اوتوماتيك</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/push_type.webp" class="width16" alt="brand icon"></span> <span>نوع الدفع : </span></span>
+                                <span class="fontBold">دفع امامي</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/selinders.webp" class="width16" alt="brand icon"></span> <span>عدد السلندرات :
+                                    </span></span>
+                                <span class="fontBold">4 سلندر</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/dinamo.webp" class="width16" alt="brand icon"></span> <span>حجم المحرك : </span></span>
+                                <span class="fontBold">1.5</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/condition.webp" class="width16" alt="brand icon"></span> <span>الحالة : </span></span>
+                                <span class="fontBold">جدة</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/walker.webp" class="width16" alt="brand icon"></span> <span>الممشي : </span></span>
+                                <span class="fontBold">5 كم</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3 mt-2">
+                            <div class="d-flex align-items-center gap10">
+                                <span><span><img src="images/location.webp" class="width16" alt="brand icon"></span> <span>المنطقة : </span></span>
+                                <span class="fontBold">المدينة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border_bottom border_top pt-3 pb-3 d-flex align-items-center flex-wrap justify-content-between mt-3 mb-3">
+                        <div class="d-flex align-items-center gap10 flex-wrap">
+                            <img src="images/company-logo.webp" class="width90 bordered p-2 radius10" alt="company logo">
+                            <div class="d-flex flex-column gap10">
+                                <span class="fontBold font15">مجموعة صالح للسيارات</span>
+                                <div class="d-flex align-items-center">
+                                    <img class="width10 M_end_7 H-auto" src="images/location-on.webp" alt="location icon">
+                                    <span class="font10 text-secondary">الرياض</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap15">
+                            <button class="btn main_btn bgColor2 radius up raise M_end_10">
+                                <span class="pt-1 M_end_5">
+                                    <img class="width18" src="images/report-card.webp" alt="report">
+                                </span>
+                                <span>تقارير فحص المركبة</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- advantage -->
+                    <div id="accordion" class="mt-3 mb-3">
+                        <h5 class="mainColor2 fontBold mb-3">مميزات السيارة</h5>
+                        <div class="mt-2 mb-2">
+                            <button class="btn txt_start bgf3 w-100 fontBold font15" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                من الخارج
+                            </button>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                    squid.
+                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                    anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                    occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                    heard
+                                    of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 mb-2">
+                            <button class="btn txt_start bgf3 w-100 fontBold font15 collapsed" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                الداخل
+                            </button>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                    squid.
+                                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                    anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                    occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                    heard
+                                    of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 mb-2">
+                            <button class="btn txt_start bgf3 w-100 fontBold font15 collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                أمان
+                            </button>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                    lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                    probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 mb-2">
+                            <button class="btn txt_start bgf3 w-100 fontBold font15 collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                أخر
+                            </button>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                    beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                    lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                    probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap gap15">
+                        <a href="edit_auction.html" class="btn main_btn up raise width200 bgColor2 radius">تعديل السيارة</a>
+                        <a onclick="deleteElement()" class="btn main_btn up raise width200 bg-danger radius">حذف السيارة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+
+    </section>
+    <!-- end dashboard body -->
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">  new WOW().init(); </script>
+        <!-- plugins for this page  -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/sweetalert.js"></script>
+    <!-- ionicon fonts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+
+
+    <!-- scripts -->
+    <script>
+        $(document).ready(function () {
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+            var slidesPerPage = 4;
+            var syncedSecondary = true;
+            sync1.owlCarousel({
+                items: 1,
+                rtl: true,
+                nav: false,
+                autoplay: true,
+                dots: false,
+                loop: true,
+                margin: 0,
+                smartSpeed: 1000,
+                responsiveRefreshRate: 200,
+                navText: ['', ''],
+            }).on('changed.owl.carousel', syncPosition);
+
+            sync2
+                .on('initialized.owl.carousel', function () {
+                    sync2.find(".owl-item").eq(0).addClass("current");
+                })
+                .owlCarousel({
+                    items: slidesPerPage,
+                    rtl: true,
+                    margin: 10,
+                    dots: false,
+                    nav: false,
+                    smartSpeed: 500,
+                    slideBy: slidesPerPage,
+                    responsiveRefreshRate: 100
+                }).on('changed.owl.carousel', syncPosition2);
+
+            function syncPosition(el) {
+                var count = el.item.count - 1;
+                var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+                if (current < 0) {
+                    current = count;
+                }
+                if (current > count) {
+                    current = 0;
+                }
+                sync2
+                    .find(".owl-item")
+                    .removeClass("current")
+                    .eq(current)
+                    .addClass("current");
+                var onscreen = sync2.find('.owl-item.active').length - 1;
+                var start = sync2.find('.owl-item.active').first().index();
+                var end = sync2.find('.owl-item.active').last().index();
+
+                if (current > end) {
+                    sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                    sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+
+            function syncPosition2(el) {
+                if (syncedSecondary) {
+                    var number = el.item.index;
+                    sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+            sync2.on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                var number = $(this).index();
+                sync1.data('owl.carousel').to(number, 300, true);
+            });
+        });
+    </script>
+        <script>
+            function deleteElement() {
+                Swal.fire({
+                    title: '<h5 class="bold">هل أنت متأكد من الحذف ؟</h5>',
+                    icon: 'warning',
+                    html: '<p class="font12">في حالة الحذف سيتم حذف البيانات المتعلقه بالسيارة</p> '
+                        + '<div class="d-flex align-items-center justify-content-center gap10">'
+                        + '    <button class="btn main_btn up raise bgColor2 w-100" onclick="Swal.clickConfirm()">نعم , حذف</button>'
+                        + '    <button class="btn main_btn up raise bg-danger w-100" onclick="Swal.clickCancel()" >تراجع</button>'
+                        + '</div>',
+                    showCancelButton: false,
+                    showConfirmButton: false,
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: '<h5 class="bold">تهانينا ! تم الحذف بنجاح</h5>',
+                            html: '<a href="#" class="btn main_btn up raise bgColor2 w-100 d-block">تأكيد</a>',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                })
+            }
+        </script>
+
+</body>
+
+</html>
